@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eco Food</title>
+
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <script
+            defer
+            src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+        ></script>
+
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <!-- <script defer src="js/testJs.js"></script> -->
+        <script defer src="js/loadProducts.js"></script>
+        <script src="js/jsButtons.js" defer></script>
+        <script src="js/jsCart.js" defer></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <a href="#"><img src="img/logo.png" alt="logo" /></a>
+                <section>
+                    <a href="#" class="button">Login</a>
+                    <a href="#" class="link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Cart
+                        <i class="fas fa-shopping-basket"></i>
+                        (<span id="count">0</span>)
+                    </a>
+                    <button class="button" id="clear-cart">Clear cart</button>
+                </section>
+                <nav id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu">
+                        <li><a href="#" class="link">Home</a></li>
+                        <li><a href="#" class="link">Catalog</a></li>
+                        <li><a href="#" class="link">About us</a></li>
+                        <li><a href="#" class="link">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <hr />
+                <button class="yellowButton" id="button-top">-></button>
+                <section>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/slide1432c7de7-6e25-5178-ee2b-79c281f04a6c_810_360_1.png" class="d-block w-100" alt="slide 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/slide2d898e229-3f94-48f8-ad56-34e90c1f9e73_810_360_1.png" class="d-block w-100" alt="slide 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/slide3e51c3527-4094-6bad-1fbf-5f53cf9a253d_810_360_1.png" class="d-block w-100" alt="slide 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>
+                <hr />
+                <section id="jsProducts" class="products">
+                </section>
+                <section>
+                    <h2>Your personal sales guide...</h2>
+                    <div class="img-wrapper">
+                        <form action="#">
+                            <p class="discount">
+                                stay up to date with <span>discount</span>...
+                            </p>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Enter your email..."
+                            />
+                            <input
+                                class="button"
+                                type="submit"
+                                value="Subscribe"
+                            />
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <hr />
+                <section>
+                    <article>
+                        <h3><i class="fas fa-cubes"></i>Healing with Honey</h3>
+                        <p>
+                            Praesent vestiblum molestie lacus. Aenean nonummy
+                            hendrerit.
+                        </p>
+                    </article>
+                    <article>
+                        <h3><i class="fas fa-tree"></i>Healing with Honey</h3>
+                        <p>
+                            Praesent vestiblum molestie lacus. Aenean nonummy
+                            hendrerit.
+                        </p>
+                    </article>
+                    <article>
+                        <h3>
+                            <i class="fab fa-codepen"></i>Healing with Honey
+                        </h3>
+                        <p>
+                            Praesent vestiblum molestie lacus. Aenean nonummy
+                            hendrerit.
+                        </p>
+                    </article>
+                </section>
+                <section class="social-links">
+                    <a href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </section>
+                <p>&copy; All rights reserved.</p>
+            </footer>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Basket
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table id="basket"></table>
+                        <div>Total price: $<span id="total-cart">0</span></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="button">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

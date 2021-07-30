@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ecco Food</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+
+        <script
+            defer
+            src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+        ></script>
+
+		<script src="js/jsButtons.js" defer></script>
+		<script src="js/loadProduct.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <a href="#"><img src="img/logo.png" alt="logo" /></a>
+            <section>
+                <a href="#" class="button">Login</a>
+                <a href="#" class="link">
+                    Cart
+                    <i class="fas fa-shopping-basket"></i>
+                    (<span>0</span>)
+                </a>
+                <button class="button">Clear cart</button>
+            </section>
+            <nav id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <li><a href="#" class="link">Home</a></li>
+                    <li><a href="#" class="link">Catalog</a></li>
+                    <li><a href="#" class="link">About us</a></li>
+                    <li><a href="#" class="link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <button id="jsGoBack">Go back</button>
+            <section>
+                <h3 id="jsProductName"></h3>
+                <img id="jsProductImg" />
+                <article>
+                    <p>Base price $5.00</p>
+                    <p>Base price for variant $5.00</p>
+                    <p><b>Sales price</b></p>
+                    <p><b>$4.75</b></p>
+                    <button>Add to cart</button>
+                </article>
+            </section>
+            <section>
+                <h3>Reviews</h3>
+                <hr />
+                <p>
+                    Lorem, ipsum dolor sit amet, consectetur adipisicing elit.
+                    Obcaecati doloribus harum earum quia suscipit alias
+                    reprehenderit est nostrum veritatis hic aperiam, assumenda
+                    illo quod, quos nemo! Doloremque veniam illo,
+                </p>
+            </section>
+        </main>
+        <footer>
+            <hr />
+            <section>
+                <article>
+                    <h2>Healing with Honey</h2>
+                    <p>
+                        Praesent vestiblum molestie lacus. Aenean nonummy
+                        hendrerit.
+                    </p>
+                </article>
+                <article>
+                    <h2>Healing with Honey</h2>
+                    <p>
+                        Praesent vestiblum molestie lacus. Aenean nonummy
+                        hendrerit.
+                    </p>
+                </article>
+                <article>
+                    <h2>Healing with Honey</h2>
+                    <p>
+                        Praesent vestiblum molestie lacus. Aenean nonummy
+                        hendrerit.
+                    </p>
+                </article>
+            </section>
+            <section>
+                <a href="facebook.com">f</a>
+                <a href="#">u</a>
+                <a href="#">i</a>
+            </section>
+            <p>&copy; All rights reserved.</p>
+        </footer>
+    </body>
+</html>
